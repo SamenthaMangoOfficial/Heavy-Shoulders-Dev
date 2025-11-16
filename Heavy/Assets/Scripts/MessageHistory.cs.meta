@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0edab9260fff58e438efcfe6286ac3e9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - RecipienttextPrefab: {fileID: 7419584057879542534, guid: 3b4927d4c23ae7145b33fbd1ae5711ca, type: 3}
+  - FremontTextPrefab: {fileID: 7419584057879542534, guid: e5511fe13cdba4d4dbe54f8dd0ab65a5, type: 3}
+  - ChatContainer: {instanceID: 0}
+  - contactManager: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
