@@ -98,7 +98,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -299,3 +299,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   UiPrefabList:
   - {fileID: 2608062006848594430, guid: 48f7f1021248f4e449407fffcca5eebf, type: 3}
+  - {fileID: 2608062006848594430, guid: 4e0daeac249f3e041b8111c34c9ed498, type: 3}

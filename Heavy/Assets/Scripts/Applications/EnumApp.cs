@@ -9,5 +9,6 @@ public enum EnumApp
     Camera,
     Wallet,
     Settings,
-    Music
+    Music,
+    Exit
 }

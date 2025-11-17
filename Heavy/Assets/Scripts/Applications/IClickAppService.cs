@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class IClickAppService : MonoBehaviour
 {
-    GameObject AppUIContainer;
+    private GameObject AppUIContainer;
     [SerializeField] List<GameObject> UiPrefabList;
+    private GameObject SelectedPrefab;
     void Start()
     {
         AppUIContainer = GameObject.Find("AppUiContainer");
@@ -24,7 +25,8 @@ public class IClickAppService : MonoBehaviour
         [EnumApp.Camera] = new ClickAppCamera(),
         [EnumApp.Wallet] = new ClickAppWallet(),
         [EnumApp.Settings] = new ClickAppSettings(),
-        [EnumApp.Music] = new ClickAppMusic()
+        [EnumApp.Music] = new ClickAppMusic(),
+        [EnumApp.Exit] = new ClickAppExit()
     };
 
     public void SelectApplication()
@@ -33,10 +35,15 @@ public class IClickAppService : MonoBehaviour
 
         if (Enum.TryParse(appName, out EnumApp result))
         {
+            
             if (Strategies.TryGetValue(result, out var strategie))
             {
-                var prefab = UiPrefabList[(int)result];
-                strategie.ClickOnApplication(AppUIContainer, prefab);
+                if (result != EnumApp.Exit) 
+                {
+                    SelectedPrefab = UiPrefabList[(int)result];
+                }
+
+                strategie.ClickOnApplication(AppUIContainer, SelectedPrefab);
             }
 
         }
