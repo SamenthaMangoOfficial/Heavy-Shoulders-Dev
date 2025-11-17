@@ -299,4 +299,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   UiPrefabList:
   - {fileID: 2608062006848594430, guid: 48f7f1021248f4e449407fffcca5eebf, type: 3}
-  - {fileID: 2608062006848594430, guid: 4e0daeac249f3e041b8111c34c9ed498, type: 3}
+  - {fileID: 2608062006848594430, guid: 16f512d30e5c54b46b223ac196f0c9f9, type: 3}
